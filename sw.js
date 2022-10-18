@@ -3,8 +3,8 @@ const INMUTABLE_CACHE_NAME = 'inmutable-cache-v1.1';
 const DYNAMIC_CACHE_NAME = 'dynamic-cache-v1.1';
 
 const appShellStaticFields = [
-    '/',
-    '/index.html'
+    './',
+    './index.html'
 ];
 
 const appShellInmutableFields = [
@@ -60,7 +60,7 @@ self.addEventListener('fetch', (event)=>{
             caches.open(DYNAMIC_CACHE_NAME).then((cahce)=>{
                 console.log(`[Service Worker] Caching new resource: ${event.request.url}`);
                 cahce.put(event.request,respWeb);
-                cleanCache(DYNAMIC_CACHE_NAME,3);
+                cleanCache(DYNAMIC_CACHE_NAME,5);
             });
             return respWeb.clone();
         });
