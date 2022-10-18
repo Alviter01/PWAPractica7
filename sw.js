@@ -4,7 +4,14 @@ const DYNAMIC_CACHE_NAME = 'dynamic-cache-v1.1';
 
 const appShellStaticFields = [
     './',
-    './index.html'
+    './index.html',
+    './manifest.json',
+    './images/icons/android-launchericon-48-48.png',
+    './images/icons/android-launchericon-72-72.png',
+    './images/icons/android-launchericon-96-96.png',
+    './images/icons/android-launchericon-144-144.png',
+    './images/icons/android-launchericon-192-192.png',
+    './images/icons/android-launchericon-512-512.png'
 ];
 
 const appShellInmutableFields = [
